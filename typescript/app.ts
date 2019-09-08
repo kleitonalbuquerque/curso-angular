@@ -41,7 +41,8 @@ console.log(`inc (5) = ${inc(5)}`)
 // Classes
 console.log('############### Classes | Módulos ###############')
 
-import { Spacecraft, Containership } from './base-ships'
+import { Spacecraft } from './base-ships'
+import { Containership } from './container-base'
 import { MilleniumFalcon } from './starfighters'
 
 let ship = new Spacecraft('hyperdrive')

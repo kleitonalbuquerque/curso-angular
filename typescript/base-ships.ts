@@ -7,11 +7,11 @@ class Spacecraft {
   }
 }
 
-interface Containership {
+// interface Containership {
   
-  cargoContainers: number
+//   cargoContainers: number
 
-  // cargoContainers?: number => opcional
-}
+//   // cargoContainers?: number => opcional
+// }
 
-export { Spacecraft, Containership }
+export { Spacecraft }
