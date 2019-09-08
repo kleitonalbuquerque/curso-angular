@@ -37,3 +37,22 @@ function inc (speed: number, inc: number = 1): number {
 
 console.log(`inc (5, 1) = ${inc(5, 1)}`)
 console.log(`inc (5) = ${inc(5)}`)
+
+// Classes
+console.log('############### Classes | Módulos ###############')
+
+import { Spacecraft, Containership } from './base-ships'
+import { MilleniumFalcon } from './starfighters'
+
+let ship = new Spacecraft('hyperdrive')
+ship.jumpIntoHyperSpace()
+
+console.log('####################################################################')
+
+let falcon = new MilleniumFalcon()
+falcon.jumpIntoHyperSpace()
+
+console.log('############### Interface ###############')
+
+let goodForTheJob = ( ship: Containership ) => ship.cargoContainers > 2
+console.log(`Is falcon good for the job? ${goodForTheJob (falcon) ? 'YES' : 'NO' }`)

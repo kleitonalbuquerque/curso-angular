@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 // Declaração de variáveis
 var message = "Help me, Obi-Wan Kenobi. You're my only hope!";
 console.log(message);
@@ -30,3 +32,15 @@ function inc(speed, inc) {
 }
 console.log("inc (5, 1) = " + inc(5, 1));
 console.log("inc (5) = " + inc(5));
+// Classes
+console.log('############### Classes | Módulos ###############');
+var base_ships_1 = require("./base-ships");
+var starfighters_1 = require("./starfighters");
+var ship = new base_ships_1.Spacecraft('hyperdrive');
+ship.jumpIntoHyperSpace();
+console.log('####################################################################');
+var falcon = new starfighters_1.MilleniumFalcon();
+falcon.jumpIntoHyperSpace();
+console.log('############### Interface ###############');
+var goodForTheJob = function (ship) { return ship.cargoContainers > 2; };
+console.log("Is falcon good for the job? " + (goodForTheJob(falcon) ? 'YES' : 'NO'));
