@@ -1,5 +1,5 @@
 import { Spacecraft } from './base-ships'
-import { Containership } from './container-base'
+import { Containership } from './base-container'
 
 export class MilleniumFalcon extends Spacecraft implements Containership {
 
